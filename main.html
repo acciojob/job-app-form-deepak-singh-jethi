@@ -7,9 +7,60 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	 <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required />
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div>
+        <label for="gender"> Gender:</label>
+
+        <label for="gender-m">Male</label>
+        <input type="radio" name="gender" id="gender-m" required />
+
+        <label for="gender-f">female</label>
+        <input type="radio" name="gender" id="gender-f" required />
+      </div>
+
+      <div>
+        <label for="laptop">Laptop brands</label>
+        <select name="laptop" id="laptop">
+          <option value="a">Apple</option>
+          <option value="a">Asus</option>
+          <option value="h">HP</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="0" required />
+      </div>
+
+      <div>
+        <label for="dob">DOB:</label>
+        <input type="date" name="dob" id="dob" required>
+      </div>
+
+      <div>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+      </div>
+
+      <div>
+        <label for="submit">Submit</label>
+        <input type="submit" name="submit" id="submit">
+      </div>
+      <div>
+
+        <label for="portfolio">URl to Portfolio</label>
+        <input type="url" name="url" id="url">
+      </div>
+    </form>
 
 </body>
 
